@@ -3,7 +3,7 @@ import {ScrollDownIndicator} from 'react-landing-page'
 import NestedGrid from './components/first'
 import Second from './components/secondpage'
 import Particls from './components/particle'
-import DemoCarousel from './components/carou'
+import DemoCarousel from './components/carousel'
 
 
 const App = props => (
