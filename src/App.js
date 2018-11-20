@@ -1,6 +1,6 @@
 import React from 'react'
 import {ScrollDownIndicator} from 'react-landing-page'
-import NestedGrid from './components/first'
+import NestedGrid from './components/landingComp'
 import Second from './components/secondpage'
 import Particls from './components/particle'
 import DemoCarousel from './components/carousel'
@@ -13,11 +13,10 @@ const App = props => (
       <div className="zstyle" >
       <NestedGrid />
       <Second />
-      <DemoCarousel className="teno"/>
+      <DemoCarousel className="carouselstyle"/>
        </div>
        <Particls className ="tito0" />
-       <ScrollDownIndicator />     
-    
+       <ScrollDownIndicator />      
       </React.Fragment>
       
  

@@ -39,13 +39,24 @@
   height: 100%;
   justify-content: center;
 }
-
+.secondstyle{
+  background:black;
+  height: 600px;
+  padding-bottom: 50px;
+  width: 100%;
+}
 .secondstyle h1{
   color:white;
   font-size: 45px;
   margin-left: 50px;
   padding-top:50px ;
 }
+.secondstyle p{
+  color:white;
+  margin-left: 50px;
+  justify-content: center;
+}
+
 
 .carouselstyle{
 
