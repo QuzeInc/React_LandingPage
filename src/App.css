@@ -63,3 +63,46 @@
   width: 100%;
   height: 100px;
 }
+
+.top{
+  padding-block-start: 20px
+}
+
+.c{
+
+  widows: 100%;
+  height: 100%;
+  
+}
+.c1{
+  background:red;
+  widows: 100%;
+  height: 100%;
+  
+}
+.c2{
+  background:yellow;
+  widows: 100%;
+  height: 100%;
+  
+}
+.c3{
+  background:green;
+  widows: 100%;
+  height: 100%;
+  
+}
+.c4{
+  background: blue;
+  widows: 100%;
+  height: 100%;
+  
+}
+.c5{
+  background: blueviolet;
+  widows: 100%;
+  height: 100%;
+  
+}
+
+

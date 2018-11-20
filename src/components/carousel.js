@@ -1,24 +1,72 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
- 
-class DemoCarousel extends Component {
+import Carousel from "nuka-carousel";
+import React from "react";
+import ReactDom from "react-dom";
+
+const colors = ["7732bb", "047cc0", "00884b", "e3bc13", "db7c00", "aa231f"];
+
+class CarouselView extends React.Component {
+    constructor() {
+        super(...arguments);
+        this.state = {
+            slideIndex: 0,
+            length: 6,
+            wrapAround: false,
+            underlineHeader: false,
+            slidesToShow: 1,
+            cellAlign: "left",
+            transitionMode: "scroll",
+            heightMode: "max",
+            withoutControls: false
+        };
+
+        this.handleImageClick = this.handleImageClick.bind(this);
+    }
+
+    handleImageClick() {
+        this.setState({ underlineHeader: !this.state.underlineHeader });
+    }
+
     render() {
-         return (
-            <Carousel >
-                <div>
-                    <img classname="teno" src="https://media.istockphoto.com/photos/green-biliard-cloth-color-texture-close-up-picture-id506918794?k=6&m=506918794&s=612x612&w=0&h=f8yw0DTB0JU4fWej-2N3f9H39N3L3MEmUykOXMKeIV8=" />
-                    
-                </div>
-                <div>
-                    <img  classname="teno" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEUAAP+KeNJXAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC" />
-                    
-                </div>
-            
-            </Carousel>
+        return (
+            <div style={{ width: "100%",height:450, margin: "auto" }}>
+                <Carousel
+                    withoutControls={this.state.withoutControls}
+                    transitionMode={this.state.transitionMode}
+                    cellAlign={this.state.cellAlign}
+                    slidesToShow={this.state.slidesToShow}
+                    wrapAround={this.state.wrapAround}
+                    slideIndex={this.state.slideIndex}
+                    heightMode={this.state.heightMode}
+                    renderTopCenterControls={({ currentSlide }) => (
+                        <div
+                            style={{
+                                fontFamily: "Helvetica",
+                                color: "#fff",
+                                textDecoration: this.state.underlineHeader
+                                    ? "underline"
+                                    : "none"
+                            }}
+                        >
+                           
+                        </div>
+                    )}
+                >
+                    {colors.slice(0, this.state.length).map((color, index) => (
+                        <img
+                            src={`http://placehold.it/1000x400/${color}/ffffff/&text=slide${index +
+                                1}`}
+                            alt={`Slide ${index + 1}`}
+                            key={color}
+                            onClick={this.handleImageClick}
+                            style={{
+                                height:450
+                            }}
+                        />
+                    ))}
+                </Carousel>
+            </div>
         );
     }
 }
 
-export default DemoCarousel;
+export default CarouselView 
