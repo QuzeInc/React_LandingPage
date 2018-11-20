@@ -1,6 +1,7 @@
 import React from 'react'
 import {ScrollDownIndicator} from 'react-landing-page'
 import NestedGrid from './components/first'
+import Second from './components/secondpage'
 import Particls from './components/particle'
 import DemoCarousel from './components/carou'
 
@@ -11,7 +12,7 @@ const App = props => (
      
       <div className="zstyle" >
       <NestedGrid />
-      
+      <Second />
       <DemoCarousel className="teno"/>
        </div>
        <Particls className ="tito0" />
