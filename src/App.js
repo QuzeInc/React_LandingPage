@@ -4,7 +4,7 @@ import NestedGrid from './components/landingComp'
 import Second from './components/secondpage'
 import Particls from './components/particle'
 import CarouselView from './components/carousel'
-
+import ColorTransition from './components/colortransition'
 
 const App = props => (
 
@@ -14,6 +14,7 @@ const App = props => (
       <NestedGrid />
       <Second />
       <CarouselView />
+      <ColorTransition />
        </div>
        <Particls className ="tito0" />
        <ScrollDownIndicator />      
