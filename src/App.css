@@ -9,15 +9,7 @@
   text-justify: inter-word;
 }
 
-.hp{
-  text-align: justify;
-  text-justify: inter-word;
-  margin: 0px;
-  justify-content: flex-start;
-  font-weight:normal;
-}
-
-.dp{
+.learnsoonstyle{
   text-align: justify;
   text-justify: inter-word;
   margin-top: 0px;
@@ -37,4 +29,13 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+
+.zstyle{
+  z-index: 5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
 }

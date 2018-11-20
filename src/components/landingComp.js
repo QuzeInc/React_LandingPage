@@ -50,10 +50,10 @@ function FormRow(props) {
        <br>
        </br> 
        <div className="aligntextstart">
-         <h1 >
+         <h1 className="learnsoonstyle">
            Learn Different
          </h1>
-         <h1 >
+         <h1 className="learnsoonstyle">
            Soon.
          </h1>
       </div> 
