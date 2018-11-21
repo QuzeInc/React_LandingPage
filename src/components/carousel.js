@@ -29,7 +29,7 @@ class CarouselView extends React.Component {
     render() {
         return (
             <div style={{ width: "100%",height:450, margin: "auto" }}>
-                <Carousel
+                <Carousel 
                     withoutControls={this.state.withoutControls}
                     transitionMode={this.state.transitionMode}
                     cellAlign={this.state.cellAlign}

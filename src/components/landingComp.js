@@ -28,14 +28,14 @@ function FormRow(props) {
 
   return (
     <React.Fragment>
-     <Grid item xs={12}   sm={5}  >
-       <div >
+     <Grid item xs={12}   sm={6}  >
+       <div style={{marginTop:"30px"}}>
           <img  src={window.location.origin + '/images/logo.png'} width={200} height={200}  />
           <h1  className="logotext">QUZE</h1>
         </div>
      </Grid>
-     <Grid item xs={12}  sm={7}  >
-     <div>
+     <Grid item xs={12}  sm={6}  >
+     <div style={{marginLeft:"25%"}}>
        <div className="aligntextstart">
          <TextLoop speed={1500}  style={textanimationstyle}>
            <div > QUZE</div>
@@ -80,7 +80,7 @@ function NestedGrid(props) {
   return (
    <React.Fragment>
      <div style={logoStyle} className={classes.root}>
-       <Grid container spacing={16} alignItems="center"   style={{ minHeight: '100vh' }}> 
+       <Grid container spacing={24} alignItems="center"   style={{ minHeight: '100vh' }}> 
         <FormRow classes={classes}   />
         <FormDialog />
       </Grid>  
