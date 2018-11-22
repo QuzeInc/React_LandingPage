@@ -2,7 +2,7 @@ import Carousel from "nuka-carousel";
 import React from "react";
 import ReactDom from "react-dom";
 
-const colors = ["7732bb", "047cc0", "00884b", "e3bc13", "db7c00", "aa231f"];
+const colors = ["7732bb", "047cc0", "00884b", "e3bc13", "db7c00"];
 
 class CarouselView extends React.Component {
     constructor() {

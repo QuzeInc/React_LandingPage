@@ -1,12 +1,21 @@
 .logotext{
   margin-top: 10px;
   padding-left: 12px;
-  color: #000;
+
+ color: #000000;	
+  font-family: Futura;
+    font-size: 40px;	
+    font-weight: 500;	
+    line-height: 53px;
 }
 
 .aligntextstart{
   text-align: justify;
   text-justify: inter-word;
+  font-weight: 500;
+  font-size: 48px;
+  margin-right: 10px;
+  margin-top: 0px;
 }
 
 .learnsoonstyle{
@@ -18,18 +27,25 @@
   justify-content: flex-start;
 }
 
+
+.learndifferentstyle{
+margin: 0px;
+padding: 0px;
+font-family: Lato;
+font-size: 48px;
+font-weight: 300;
+}
 .getnotified{
-  background-color:black; /* Green */
-    border: none;
-    color: white;
-    border-radius: 15px;  
-    padding: 15px 32px;
-    margin-bottom: 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-family: 'Lato', sans-serif;
+  height: 65px;
+  width: 220px;
+  margin-right: 20px;
+  border: 2px solid #000000;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: Lato;
+  font-size: 24px;	
+  margin-top: 20px;
+  line-height: 29px;
 }
 
 
@@ -42,24 +58,35 @@
 }
 .secondstyle{
   background:black;
-  height: 100%;
+  height: auto;
   padding-bottom: 50px;
   width: 100%;
+
+
 }
 .secondstyle h1{
   color:white;
   font-size: 45px;
   text-align:  center;
   padding-top:50px ;
+  font-family: Lato;	
+  font-size: 100px;	
+  font-weight: bold;
+  	line-height: 120px;
 }
 .secondstyle p{
   color:white;
-  margin-top: 19%;
   margin-left: 20px;
-  font-size: 20px;
+  font-size: 24px;
   margin-right: 20px;
+  margin-top: 10%;
+  margin-bottom: 10%;
   justify-content: left;
+  font-family: Lato;	
+ 
 }
+
+
 
 .carouselstyle{
 

@@ -14,8 +14,8 @@ const textanimationstyle = {
   color: "blue",
   padding:"0px",
   margin:"0px",
-
-};
+  fontSize: "48px",
+  };
 
 const logoStyle = {
   fontSize: '15px',
@@ -35,7 +35,7 @@ function FormRow(props) {
         </div>
      </Grid>
      <Grid item xs={12}  sm={6}  >
-     <div style={{marginLeft:"25%"}}>
+     <div style={{marginLeft:"14%"}}>
        <div className="aligntextstart">
          <TextLoop speed={1500}  style={textanimationstyle}>
            <div > QUZE</div>
@@ -45,17 +45,17 @@ function FormRow(props) {
          </TextLoop>
        </div>
        <h1 className="aligntextstart">
-         Your Future
+         your future
        </h1>
        <br>
        </br> 
        <div className="aligntextstart">
-         <h1 className="learnsoonstyle">
-           Learn Different
-         </h1>
-         <h1 className="learnsoonstyle">
+         <p className="learndifferentstyle">
+           Learn different
+         </p>
+         <p className="learndifferentstyle">
            Soon.
-         </h1>
+         </p>
       </div> 
       <br />
       <div  className="aligntextstart">
