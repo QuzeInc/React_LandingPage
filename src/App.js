@@ -7,6 +7,7 @@ import CarouselView from './components/carousel'
 import ColorTransition from './components/colortransition'
 import MyMenu from './components/navbar'
 
+
 import Solutions from './components/solutions';
 import ScrollToTop from 'react-scroll-up'
 import Particles from 'reactparticles.js'
@@ -31,7 +32,7 @@ const App = props => (
      
       <ColorTransition />
       <Solutions />
-   
+         
       <ScrollToTop showUnder={160}>
 
       <span>UP</span>
