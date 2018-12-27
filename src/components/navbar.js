@@ -10,7 +10,7 @@ const Nav = (props) => {
       <div className="container">
         <div className="collapse navbar-collapse" id="nav-id">
         <div className="nav-links">
-      <a href="#">Home</a>
+      <a href="#" >Home</a>
       <a href="#">Learn</a>
       <a href="#">Skills</a>
       <a href="#">Wallet</a>

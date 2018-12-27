@@ -6,7 +6,8 @@ import Grid from '@material-ui/core/Grid';
 import '../App.css'
 
 import TextLoop from 'react-text-loop';
-import FormDialog from '../components/subscribe'
+import FormDialog from '../components/subscribe';
+
 
 
 const textanimationstyle = {
@@ -29,13 +30,13 @@ function FormRow(props) {
   return (
     <React.Fragment>
      <Grid item xs={12}   sm={6}  >
-       <div style={{marginTop:"30px"}}>
+       <div style={{marginTop:"10px"}}>
           <img  src={window.location.origin + '/images/logo.png'} width={200} height={200}  />
           <h1  className="logotext">QUZE</h1>
         </div>
      </Grid>
      <Grid item xs={12}  sm={6}  >
-     <div style={{marginLeft:"14%"}}>
+     <div style={{marginLeft:"20%",marginTop:"40px"}}>
        <div className="aligntextstart">
          <TextLoop speed={1500}  style={textanimationstyle}>
            <div > QUZE</div>
@@ -59,12 +60,12 @@ function FormRow(props) {
       </div> 
       <br />
       <div  className="aligntextstart">
-         <button className="getnotified">
+                <button className="getnotified">
             GET NOTIFIED
-         </button>
+                </button>
       </div>
     </div>
-   </Grid>
+  </Grid>
 
     </React.Fragment>
   );
@@ -78,9 +79,9 @@ function NestedGrid(props) {
   const { classes } = props;
 
   return (
-   <React.Fragment>
-     <div style={logoStyle} className={classes.root}>
-       <Grid container spacing={24} alignItems="center"   style={{ minHeight: '100vh' }}> 
+  <React.Fragment>
+    <div style={logoStyle} className={classes.root}>
+      <Grid container spacing={8} alignItems="center"   style={{ minHeight: '75vh' }}> 
         <FormRow classes={classes}   />
         <FormDialog />
       </Grid>  

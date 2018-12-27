@@ -1,5 +1,5 @@
 .logotext{
-  margin-top: 10px;
+  margin-top: 15px;
   padding-left: 12px;
 
  color: #000000;	
@@ -8,6 +8,16 @@
     font-weight: 500;	
     line-height: 53px;
 }
+.pbackground{
+  background-color: #000000;
+  position:fixed;
+  z-index: -999;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+}
+
 
 .aligntextstart{
   text-align: justify;
@@ -16,6 +26,9 @@
   font-size: 48px;
   margin-right: 10px;
   margin-top: 0px;
+}
+.particles{
+  height: 90%;
 }
 
 .learnsoonstyle{
@@ -53,7 +66,7 @@ font-weight: 300;
   z-index: 5;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 90%;
   justify-content: center;
 }
 .secondstyle{
@@ -245,4 +258,59 @@ font-weight: 300;
   margin:  25px;
   font-family: Lato;
   font-weight: 600
+}
+
+
+
+
+
+
+
+
+row-bg-overlay{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  backface-visibility: hidden;
+  background: rgba(9,184,92,0.88); 
+  background: linear-gradient(to bottom,rgba(9,184,92,0.88) 0%,#09b85c 100%); 
+   opacity: 0.8;
+}
+
+.nectar-shape-divider-wrap[data-position="top"] {
+  transform: rotate(180deg);
+}
+.nectar-shape-divider-wrap[data-position="top"] {
+  top: -1px;
+  bottom: auto;
+}
+
+.lg{
+background: #09b85c
+}
+.rg{
+  background: #ed0707
+}
+
+.rtg{
+background: navy;
+}
+
+.rbg{
+background:yellow;
+}
+
+
+.m{
+font-family: Montserrat;
+text-transform: none;
+font-size: 60px;
+line-height: 65px;
+font-weight: 600;
+margin-top: 0dp;
+align-self:center;
 }
